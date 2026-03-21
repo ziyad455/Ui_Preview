@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Inter:wght@300;400;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "inverse-surface": "#e5e2e1",
+              "primary-fixed-dim": "#e9c349",
+              "surface": "#131313",
+              "tertiary-fixed-dim": "#b4c5ff",
+              "on-secondary-fixed": "#241a00",
+              "on-surface": "#e5e2e1",
+              "surface-container-lowest": "#0e0e0e",
+              "on-tertiary-container": "#254188",
+              "on-surface-variant": "#d0c5af",
+              "surface-dim": "#131313",
+              "on-error-container": "#ffdad6",
+              "error-container": "#93000a",
+              "on-secondary": "#3d2f00",
+              "surface-container-high": "#2a2a2a",
+              "on-tertiary-fixed": "#00174b",
+              "tertiary-container": "#97b0ff",
+              "surface-container": "#201f1f",
+              "secondary-container": "#b08c10",
+              "surface-container-low": "#1c1b1b",
+              "outline-variant": "#4d4635",
+              "secondary": "#eac249",
+              "on-tertiary": "#082b72",
+              "on-primary-fixed-variant": "#574500",
+              "on-secondary-container": "#352800",
+              "surface-bright": "#393939",
+              "secondary-fixed": "#ffe08b",
+              "on-primary-fixed": "#241a00",
+              "tertiary-fixed": "#dbe1ff",
+              "surface-container-highest": "#353534",
+              "inverse-on-surface": "#313030",
+              "tertiary": "#bfcdff",
+              "on-secondary-fixed-variant": "#584400",
+              "on-surface-variant": "#353534",
+              "primary-fixed": "#ffe088",
+              "on-primary-container": "#554300",
+              "primary": "#f2ca50",
+              "secondary-fixed-dim": "#eac249",
+              "on-primary": "#3c2f00",
+              "on-tertiary-fixed-variant": "#27438a",
+              "on-background": "#e5e2e1",
+              "on-error": "#690005",
+              "error": "#ffb4ab",
+              "inverse-primary": "#735c00",
+              "primary-container": "#d4af37",
+              "outline": "#99907c",
+              "background": "#131313",
+              "surface-tint": "#e9c349"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+      }
+      .gold-gradient {
+        background: linear-gradient(135deg, #f2ca50 0%, #d4af37 100%);
+      }
+      .text-shadow-premium {
+        text-shadow: 0 0 20px rgba(242, 202, 80, 0.2);
+      }
+      ::-webkit-scrollbar { width: 6px; }
+      ::-webkit-scrollbar-track { background: #131313; }
+      ::-webkit-scrollbar-thumb { background: #2a2a2a; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary selection:text-on-primary">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#131313]/60 backdrop-blur-md flex justify-between items-center px-8 py-6 max-w-full">
+<div class="text-2xl font-bold tracking-[0.2em] text-[#f2ca50] font-headline uppercase">OBSIDIAN</div>
+<div class="hidden md:flex gap-12 items-center">
+<a class="font-['Noto_Serif'] tracking-widest uppercase text-sm text-[#e5e2e1] hover:text-[#f2ca50] transition-colors" href="#">Collections</a>
+<a class="font-['Noto_Serif'] tracking-widest uppercase text-sm text-[#e5e2e1] hover:text-[#f2ca50] transition-colors" href="#">Fragrance Notes</a>
+<a class="font-['Noto_Serif'] tracking-widest uppercase text-sm text-[#e5e2e1] hover:text-[#f2ca50] transition-colors" href="#">How to Order</a>
+<a class="font-['Noto_Serif'] tracking-widest uppercase text-sm text-[#e5e2e1] hover:text-[#f2ca50] transition-colors" href="#">FAQ</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2 font-headline tracking-widest uppercase text-xs font-bold active:scale-95 transition-transform">Order Now</button>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative h-screen flex items-center justify-center overflow-hidden pt-20">
+<div class="absolute inset-0 bg-surface-container-lowest">
+<img alt="Premium black fragrance bottle" class="w-full h-full object-cover opacity-40 mix-blend-luminosity" data-alt="Luxury black perfume bottle on dark background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbYLp-sdmMIKPxp7jW1_H_-sLckW8QhMxaxZIbNJLjayDKv70EmyX2MvyzOPe2ZkG_CkPvCUgo0Iop9DCbleK_edkyDovc9MtM4uymXsoRBgip7CwhNBp8S1LXJA_-eGebVzeFvsvBSdoWzFcv-y_PxGurm8yn03kIyimcuFiN28aK-AEJGY1GSpweFIRlnOcpG5WWuIuVsGANsVtzU8DGMZ6qFZGBywtNmAwCoEkQVPIXBS9s4KK6kRyXaHxc5dP4EOd4I60OeOs"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent"></div>
+</div>
+<div class="relative z-10 text-center px-6">
+<h2 class="text-primary font-headline text-sm tracking-[0.5em] uppercase mb-4">The Obsidian Curator</h2>
+<h1 class="text-on-surface font-headline text-6xl md:text-9xl font-bold tracking-tighter mb-8 leading-none">OBSIDIAN</h1>
+<p class="text-on-surface-variant font-headline text-xl md:text-2xl italic mb-12 max-w-2xl mx-auto">Power in every scent.</p>
+<a class="gold-gradient text-on-primary px-10 py-5 inline-flex items-center gap-4 font-headline tracking-widest uppercase text-sm font-bold hover:brightness-110 transition-all duration-300" href="https://wa.me/#">
+<span class="material-symbols-outlined">chat</span>
+                    Order via WhatsApp
+                </a>
+</div>
+</section>
+<!-- Featured Fragrances -->
+<section class="py-32 px-8 bg-surface">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+<div class="max-w-xl">
+<h2 class="text-primary font-headline text-sm tracking-widest uppercase mb-4">Curated Selection</h2>
+<h3 class="text-on-surface font-headline text-4xl md:text-5xl font-bold leading-tight">Masterpieces of Olfactory Art</h3>
+</div>
+<div class="h-px w-24 bg-outline-variant/30 mb-4 hidden md:block"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+<!-- Product Card 1 -->
+<div class="group bg-surface-container-low p-6 transition-all duration-500 hover:bg-surface-container-high">
+<div class="aspect-[3/4] mb-8 overflow-hidden bg-surface-container-lowest">
+<img alt="Onyx Essence bottle" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Modern geometric perfume bottle in dark studio" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBooVrg2QGCQtnKR_kdsgM-w65I8j0MuvDe8CCxmHsdc4w4Hpmr7boDbkoZzFLa7Ct0bH74f1DeSFktpyZBzULNx9QItM_7IO0YyVn1zh8PyCf7XI4QfRIpyiZ9AicU_gk4RSPwe5sLMjDPSTLochxbwAEPtgyyCld8Kmy836qREyOwcVWTyFUkTy-X9W4K8kBLlQBSMTIlC_UJMJ-cpSDbbIlleUynKaekHPL3nTnv0vKA5acKvcHsTfaHFZwgqPASxsjqryDdeB4"/>
+</div>
+<h4 class="text-on-surface font-headline text-xl mb-1">Onyx Essence</h4>
+<p class="text-on-surface-variant text-xs uppercase tracking-widest mb-6 italic">Woody &amp; Spicy</p>
+<div class="flex justify-between items-center pt-6 border-t border-outline-variant/10">
+<span class="text-primary font-bold text-lg font-headline">$185</span>
+<button class="text-primary hover:text-on-surface transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">chat</span>
+<span class="text-[10px] font-bold uppercase tracking-tighter">WhatsApp</span>
+</button>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="group bg-surface-container-low p-6 transition-all duration-500 hover:bg-surface-container-high lg:mt-12">
+<div class="aspect-[3/4] mb-8 overflow-hidden bg-surface-container-lowest">
+<img alt="Midnight Saffron bottle" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Minimalist perfume bottle against dark marble" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-2lBfj8mA8HtX3T0utAwANADWh3HbWdaZFt-nF3FRKZIzS1qdqNB4RWs_X6WyY6Fh7YjjFZt7bEilGivT7cC2OdIPZNtK4icyGnCCBZJjVwCEkF4zqEcnXhS94Hk4LmBJCOnMeIidaSuIzDsr1R-ItD8tjhgF-OC38mmrWHdTTRFVP2NVEe9fv6x2TX0AgU4JWuqN0Adeh5g5XQaN-lrKU1YoKfjd2WeLambp0UDFCcDItbmI2Gkoe6FQQ_87gPEkcqLabrtVvyQ"/>
+</div>
+<h4 class="text-on-surface font-headline text-xl mb-1">Midnight Saffron</h4>
+<p class="text-on-surface-variant text-xs uppercase tracking-widest mb-6 italic">Amber &amp; Leather</p>
+<div class="flex justify-between items-center pt-6 border-t border-outline-variant/10">
+<span class="text-primary font-bold text-lg font-headline">$210</span>
+<button class="text-primary hover:text-on-surface transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">chat</span>
+<span class="text-[10px] font-bold uppercase tracking-tighter">WhatsApp</span>
+</button>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="group bg-surface-container-low p-6 transition-all duration-500 hover:bg-surface-container-high">
+<div class="aspect-[3/4] mb-8 overflow-hidden bg-surface-container-lowest">
+<img alt="Lunar Vetiver bottle" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Sleek black fragrance bottle in shadow" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2J8ht2LpOix-Qcd9T77LU5lsaP8hB3yM-Z2socxBi_sRD5jOgeShWanHScQ9dNlI8KIsOnorDEDMxPVQ9xJA4f6fXriLkayxqUrzSYbXs0qub7aWhRaHWlHtRuhRpH2KiwZ4TCZRirQZ8JE2ZyzOJfhKOTpApeUj-NOFlE_NJFdDRo7QQkOrmz1zIl-ClRj0NGikwH_DAhB22egoC8w-SdRoJfmvxw3peEeEPH94XE2qyZqq9aN7_21MBz1Dierdn5WSm73EtAJs"/>
+</div>
+<h4 class="text-on-surface font-headline text-xl mb-1">Lunar Vetiver</h4>
+<p class="text-on-surface-variant text-xs uppercase tracking-widest mb-6 italic">Earthy &amp; Fresh</p>
+<div class="flex justify-between items-center pt-6 border-t border-outline-variant/10">
+<span class="text-primary font-bold text-lg font-headline">$165</span>
+<button class="text-primary hover:text-on-surface transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">chat</span>
+<span class="text-[10px] font-bold uppercase tracking-tighter">WhatsApp</span>
+</button>
+</div>
+</div>
+<!-- Product Card 4 -->
+<div class="group bg-surface-container-low p-6 transition-all duration-500 hover:bg-surface-container-high lg:mt-12">
+<div class="aspect-[3/4] mb-8 overflow-hidden bg-surface-container-lowest">
+<img alt="Velvet Oud bottle" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Aesthetic perfume bottle with gold cap" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcAI-E-Td7xeIYYYhjfdb7jzoA7Ow_tJjUspTGDW3Axx-0N9sCgpOrRIRbmuLm1yNMjfZ_LkondRZl074NdBlUFHUvkr8EcT4iYRsp3sy1aNAvHICk9OmG-aDuDrkhHxw75pFv3m-j-CGeS760GLcgB75bp7cf5yileay5soMjLk578yeuc_0wObPubaZ69FAvswCzIBpIsn0WGZiSBSLGgFp-7Hj7D6Jz4_6Y_dDVYTu0P-K9UYBmfVAZ7_ZYeFEGcbEWt0DGYv0"/>
+</div>
+<h4 class="text-on-surface font-headline text-xl mb-1">Velvet Oud</h4>
+<p class="text-on-surface-variant text-xs uppercase tracking-widest mb-6 italic">Smoky &amp; Sweet</p>
+<div class="flex justify-between items-center pt-6 border-t border-outline-variant/10">
+<span class="text-primary font-bold text-lg font-headline">$240</span>
+<button class="text-primary hover:text-on-surface transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">chat</span>
+<span class="text-[10px] font-bold uppercase tracking-tighter">WhatsApp</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Choose Us -->
+<section class="py-24 bg-surface-container-lowest">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-16 text-center">
+<div class="flex flex-col items-center">
+<div class="w-16 h-16 rounded-full border border-outline-variant/20 flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary text-3xl">schedule</span>
+</div>
+<h4 class="text-on-surface font-headline text-lg uppercase tracking-widest mb-3">Long Lasting</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed font-light">Engineered to endure from dawn to midnight with an unwavering presence.</p>
+</div>
+<div class="flex flex-col items-center">
+<div class="w-16 h-16 rounded-full border border-outline-variant/20 flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary text-3xl">diamond</span>
+</div>
+<h4 class="text-on-surface font-headline text-lg uppercase tracking-widest mb-3">Premium Ingredients</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed font-light">Sourced from the rarest harvests, ensuring an unmatched depth of character.</p>
+</div>
+<div class="flex flex-col items-center">
+<div class="w-16 h-16 rounded-full border border-outline-variant/20 flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary text-3xl">auto_awesome</span>
+</div>
+<h4 class="text-on-surface font-headline text-lg uppercase tracking-widest mb-3">Unique Scents</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed font-light">Bespoke formulations that challenge the ordinary and define the bold.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Fragrance Notes Visual -->
+<section class="py-32 bg-surface">
+<div class="max-w-4xl mx-auto px-8 text-center">
+<h2 class="text-primary font-headline text-sm tracking-widest uppercase mb-12">The Anatomy of Scent</h2>
+<div class="space-y-4">
+<!-- Top Notes -->
+<div class="bg-surface-container-high p-8 flex flex-col md:flex-row items-center gap-8 group">
+<div class="md:w-1/4">
+<span class="material-symbols-outlined text-primary text-4xl mb-2">air</span>
+<h5 class="text-on-surface font-headline text-xs tracking-widest uppercase">Top Notes</h5>
+</div>
+<div class="md:w-3/4 flex flex-wrap gap-3 justify-center md:justify-start">
+<span class="bg-surface-container-highest border-l-2 border-primary py-2 px-4 text-xs text-on-surface">Bergamot</span>
+<span class="bg-surface-container-highest border-l-2 border-primary py-2 px-4 text-xs text-on-surface">Black Pepper</span>
+<span class="bg-surface-container-highest border-l-2 border-primary py-2 px-4 text-xs text-on-surface">Pink Grapefruit</span>
+</div>
+</div>
+<!-- Heart Notes -->
+<div class="bg-surface-container-high p-10 flex flex-col md:flex-row items-center gap-8 group">
+<div class="md:w-1/4">
+<span class="material-symbols-outlined text-primary text-4xl mb-2">favorite</span>
+<h5 class="text-on-surface font-headline text-xs tracking-widest uppercase">Heart Notes</h5>
+</div>
+<div class="md:w-3/4 flex flex-wrap gap-3 justify-center md:justify-start">
+<span class="bg-surface-container-highest border-l-2 border-primary py-2 px-4 text-xs text-on-surface">Damask Rose</span>
+<span class="bg-surface-container-highest border-l-2 border-primary py-2 px-4 text-xs text-on-surface">Sandalwood</span>
+<span class="bg-surface-container-highest border-l-2 border-primary py-2 px-4 text-xs text-on-surface">Nutmeg</span>
+</div>
+</div>
+<!-- Base Notes -->
+<div class="bg-surface-container-high p-12 flex flex-col md:flex-row items-center gap-8 group">
+<div class="md:w-1/4">
+<span class="material-symbols-outlined text-primary text-4xl mb-2">foundation</span>
+<h5 class="text-on-surface font-headline text-xs tracking-widest uppercase">Base Notes</h5>
+</div>
+<div class="md:w-3/4 flex flex-wrap gap-3 justify-center md:justify-start">
+<span class="bg-surface-container-highest border-l-2 border-primary py-2 px-4 text-xs text-on-surface">Oud Wood</span>
+<span class="bg-surface-container-highest border-l-2 border-primary py-2 px-4 text-xs text-on-surface">Leather</span>
+<span class="bg-surface-container-highest border-l-2 border-primary py-2 px-4 text-xs text-on-surface">Musk</span>
+<span class="bg-surface-container-highest border-l-2 border-primary py-2 px-4 text-xs text-on-surface">Amber</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- How to Order -->
+<section class="py-32 bg-surface-container-lowest border-y border-outline-variant/10">
+<div class="max-w-7xl mx-auto px-8">
+<div class="text-center mb-20">
+<h2 class="text-on-surface font-headline text-4xl font-bold mb-4">Securing Your Signature</h2>
+<div class="w-12 h-1 bg-primary mx-auto"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<div class="relative group">
+<div class="text-surface-container-high font-headline font-black text-8xl absolute -top-8 -left-4 z-0 group-hover:text-primary/10 transition-colors">01</div>
+<div class="relative z-10 pl-8">
+<h4 class="text-on-surface font-headline text-xl mb-4">Choose</h4>
+<p class="text-on-surface-variant font-light text-sm">Explore our curated collections and select the essence that resonates with your character.</p>
+</div>
+</div>
+<div class="relative group">
+<div class="text-surface-container-high font-headline font-black text-8xl absolute -top-8 -left-4 z-0 group-hover:text-primary/10 transition-colors">02</div>
+<div class="relative z-10 pl-8">
+<h4 class="text-on-surface font-headline text-xl mb-4">Click</h4>
+<p class="text-on-surface-variant font-light text-sm">Initiate your order directly via WhatsApp. Our curators are ready to assist with any questions.</p>
+</div>
+</div>
+<div class="relative group">
+<div class="text-surface-container-high font-headline font-black text-8xl absolute -top-8 -left-4 z-0 group-hover:text-primary/10 transition-colors">03</div>
+<div class="relative z-10 pl-8">
+<h4 class="text-on-surface font-headline text-xl mb-4">Confirm</h4>
+<p class="text-on-surface-variant font-light text-sm">Finalize your delivery details and prepare to experience the pinnacle of fragrance.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ -->
+<section class="py-32 bg-surface">
+<div class="max-w-3xl mx-auto px-8">
+<h2 class="text-on-surface font-headline text-3xl font-bold mb-12 text-center">Frequently Asked</h2>
+<div class="space-y-4">
+<details class="group bg-surface-container-low" open="">
+<summary class="flex justify-between items-center p-6 cursor-pointer list-none">
+<span class="text-on-surface font-headline text-sm uppercase tracking-widest">Delivery</span>
+<span class="material-symbols-outlined text-primary transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<div class="px-6 pb-6 text-on-surface-variant text-sm font-light">
+                            We provide global concierge shipping. Local orders arrive within 2-3 business days. International shipping times vary by destination.
+                        </div>
+</details>
+<details class="group bg-surface-container-low">
+<summary class="flex justify-between items-center p-6 cursor-pointer list-none">
+<span class="text-on-surface font-headline text-sm uppercase tracking-widest">Payment</span>
+<span class="material-symbols-outlined text-primary transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<div class="px-6 pb-6 text-on-surface-variant text-sm font-light">
+                            Secure payments are processed via major credit cards, bank transfers, or mobile payment options discussed during your WhatsApp consultation.
+                        </div>
+</details>
+<details class="group bg-surface-container-low">
+<summary class="flex justify-between items-center p-6 cursor-pointer list-none">
+<span class="text-on-surface font-headline text-sm uppercase tracking-widest">Sizes</span>
+<span class="material-symbols-outlined text-primary transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<div class="px-6 pb-6 text-on-surface-variant text-sm font-light">
+                            Our standard perfumes are bottled in 100ml. Limited edition extrat de parfum are available in 50ml concentrations.
+                        </div>
+</details>
+<details class="group bg-surface-container-low">
+<summary class="flex justify-between items-center p-6 cursor-pointer list-none">
+<span class="text-on-surface font-headline text-sm uppercase tracking-widest">Returns</span>
+<span class="material-symbols-outlined text-primary transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<div class="px-6 pb-6 text-on-surface-variant text-sm font-light">
+                            Due to the artisanal nature of our products, we only accept returns on unopened items within 14 days of delivery.
+                        </div>
+</details>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="py-40 bg-surface flex items-center justify-center overflow-hidden relative">
+<div class="absolute inset-0 opacity-10">
+<img alt="Mist in darkness" class="w-full h-full object-cover" data-alt="Dark smoke and mist texture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAGuJm9O_TalueVIAsqcqMWbTlEtnQFz0rDTh-Xr8JhOJjBzXbjt4RMRRNSf5Ui_7WJwsqwNDd1z04bsCpT1QiYAJcqvkK135KfaV0MDC1yjQT98YAUi1tmkofxQMsQUhL9Ttl5Ip49kroogsczoINLusUWLx1l17DXieMKNl1iyBVtfmpYoWOwLQLVv4699c1Xfs4DQ-snweZAo8chaPSBZRQo2fxXvhrH-B5o9uOM46t-4mvdOaQeDDMGD_HsaMUjeDCYF4nGhs"/>
+</div>
+<div class="relative z-10 text-center px-8">
+<h2 class="text-on-surface font-headline text-5xl md:text-7xl font-bold mb-12 max-w-4xl mx-auto leading-tight">Find your signature scent</h2>
+<button class="gold-gradient text-on-primary px-16 py-6 font-headline tracking-[0.3em] uppercase text-sm font-black active:scale-95 transition-all shadow-2xl">Order Now</button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#0e0e0e] w-full py-20 px-12 mt-20 border-t border-[#4d4635]/10 flex flex-col md:flex-row justify-between items-center gap-8 w-full">
+<div class="flex flex-col items-center md:items-start gap-4">
+<div class="text-lg font-black text-[#f2ca50] font-headline tracking-widest uppercase">OBSIDIAN</div>
+<p class="font-['Inter'] text-xs tracking-tight uppercase text-[#353534]">© 2024 THE OBSIDIAN CURATOR. ALL RIGHTS RESERVED.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="font-['Inter'] text-xs tracking-tight uppercase text-[#353534] hover:text-[#e5e2e1] transition-colors opacity-80 hover:opacity-100" href="#">Privacy Policy</a>
+<a class="font-['Inter'] text-xs tracking-tight uppercase text-[#353534] hover:text-[#e5e2e1] transition-colors opacity-80 hover:opacity-100" href="#">Terms of Service</a>
+<a class="font-['Inter'] text-xs tracking-tight uppercase text-[#353534] hover:text-[#e5e2e1] transition-colors opacity-80 hover:opacity-100" href="#">Shipping Info</a>
+<a class="font-['Inter'] text-xs tracking-tight uppercase text-[#353534] hover:text-[#e5e2e1] transition-colors opacity-80 hover:opacity-100" href="#">Contact Us</a>
+</div>
+<div class="flex gap-6">
+<a class="text-[#353534] hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">share</span>
+</a>
+<a class="text-[#353534] hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">public</span>
+</a>
+</div>
+</footer>
+</body></html>
