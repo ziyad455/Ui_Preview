@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title>Asanora Jewels favicon</title>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fffaf1" />
+      <stop offset="100%" stop-color="#f2e2bf" />
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8a6116" />
+      <stop offset="55%" stop-color="#c4973d" />
+      <stop offset="100%" stop-color="#f0d58e" />
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="18" fill="url(#bg)" />
+  <path
+    d="M20 40c0-6.627 5.373-12 12-12s12 5.373 12 12"
+    fill="none"
+    stroke="url(#gold)"
+    stroke-linecap="round"
+    stroke-width="5"
+  />
+  <path
+    d="M32 10l8.5 10-8.5 10-8.5-10L32 10z"
+    fill="#fff8eb"
+    stroke="url(#gold)"
+    stroke-linejoin="round"
+    stroke-width="3"
+  />
+  <path
+    d="M27 20h10M32 10v20M24.5 20l7.5 4.6 7.5-4.6"
+    fill="none"
+    stroke="url(#gold)"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    stroke-width="2"
+  />
+</svg>

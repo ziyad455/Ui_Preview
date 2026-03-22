@@ -1,5 +1,6 @@
 import { Link, useLocation } from 'react-router-dom'
 import { ButtonLink } from './ButtonLink'
+import { assetPath } from '../lib/assets'
 
 interface SiteHeaderProps {
   generalOrderLink: string
@@ -7,9 +8,13 @@ interface SiteHeaderProps {
 
 const navItems = [
   { label: 'Home', href: '/', kind: 'route' as const },
-  { label: 'Collection', href: '/#collection', kind: 'anchor' as const },
+  {
+    label: 'Collection',
+    href: `${import.meta.env.BASE_URL}#collection`,
+    kind: 'anchor' as const,
+  },
   { label: 'Products', href: '/products', kind: 'route' as const },
-  { label: 'FAQ', href: '/#faq', kind: 'anchor' as const },
+  { label: 'FAQ', href: `${import.meta.env.BASE_URL}#faq`, kind: 'anchor' as const },
 ]
 
 export function SiteHeader({ generalOrderLink }: SiteHeaderProps) {
@@ -21,7 +26,7 @@ export function SiteHeader({ generalOrderLink }: SiteHeaderProps) {
         <Link className="brand" to="/" aria-label="Asanora Jewels home">
           <img
             className="brand__mark"
-            src="/logo.jpg"
+            src={assetPath('logo.jpg')}
             alt="Asanora Jewels logo"
             width="56"
             height="56"

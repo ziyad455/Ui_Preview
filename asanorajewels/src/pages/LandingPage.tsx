@@ -15,6 +15,7 @@ import {
   orderSteps,
   promiseItems,
 } from '../data/content'
+import { assetPath } from '../lib/assets'
 
 gsap.registerPlugin(useGSAP, ScrollTrigger)
 
@@ -24,6 +25,7 @@ interface LandingPageProps {
 
 export function LandingPage({ generalOrderLink }: LandingPageProps) {
   const scope = useRef<HTMLDivElement>(null)
+  const productsPath = `${import.meta.env.BASE_URL}products`
 
   useGSAP(
     () => {
@@ -178,7 +180,7 @@ export function LandingPage({ generalOrderLink }: LandingPageProps) {
 
               <div className="hero__actions">
                 <ButtonLink href="#collection">Browse the collection</ButtonLink>
-                <ButtonLink href="/products" variant="ghost">
+                <ButtonLink href={productsPath} variant="ghost">
                   View all products
                 </ButtonLink>
               </div>
@@ -196,7 +198,7 @@ export function LandingPage({ generalOrderLink }: LandingPageProps) {
             <div className="hero__showcase js-hero-media">
               <div className="hero__frame hero__frame--primary js-hero-primary">
                 <img
-                  src="/products/editorial-plate.jpg"
+                  src={assetPath('products/editorial-plate.jpg')}
                   alt="Assorted gold jewelry styled on a plate for an editorial brand shot"
                   fetchPriority="high"
                 />
@@ -204,14 +206,14 @@ export function LandingPage({ generalOrderLink }: LandingPageProps) {
 
               <div className="hero__frame hero__frame--secondary js-hero-secondary js-float-card">
                 <img
-                  src="/products/gold-mesh-bracelet.jpg"
+                  src={assetPath('products/gold-mesh-bracelet.jpg')}
                   alt="Layered gold bracelet on dark draped fabric"
                 />
               </div>
 
               <div className="hero__mini-card js-float-card">
                 <img
-                  src="/products/watch-bracelet.jpg"
+                  src={assetPath('products/watch-bracelet.jpg')}
                   alt="Gold watch bracelet on a dark background"
                 />
                 <div>
@@ -222,7 +224,7 @@ export function LandingPage({ generalOrderLink }: LandingPageProps) {
 
               <div className="hero__brand-card js-float-card">
                 <img
-                  src="/logo.jpg"
+                  src={assetPath('logo.jpg')}
                   alt=""
                   width="72"
                   height="72"
@@ -247,7 +249,7 @@ export function LandingPage({ generalOrderLink }: LandingPageProps) {
                 eyebrow="The essence collection"
                 title="Featured pieces with a clearer path from browsing to ordering."
                 description="Every product card now carries a direct Instagram order button so interest can turn into a message immediately."
-                action={{ href: '/products', label: 'View all products' }}
+                action={{ href: productsPath, label: 'View all products' }}
               />
             </div>
 
@@ -284,7 +286,7 @@ export function LandingPage({ generalOrderLink }: LandingPageProps) {
 
                 <div className="spotlight-card__media js-spotlight-media">
                   <img
-                    src="/products/knot-bracelet.jpg"
+                    src={assetPath('products/knot-bracelet.jpg')}
                     alt="Gold knot bracelet placed on a soft beige jewelry box"
                   />
                 </div>
@@ -311,7 +313,7 @@ export function LandingPage({ generalOrderLink }: LandingPageProps) {
               <div className="promise__feature-card">
                 <div className="promise__feature-media">
                   <img
-                    src="/products/onyx-bracelet.jpg"
+                    src={assetPath('products/onyx-bracelet.jpg')}
                     alt="Black enamel bracelet in a minimal studio composition"
                   />
                 </div>
@@ -345,7 +347,7 @@ export function LandingPage({ generalOrderLink }: LandingPageProps) {
             <div className="order__media" data-reveal>
               <div className="order__media-card">
                 <img
-                  src="/products/snake-pendant.jpg"
+                  src={assetPath('products/snake-pendant.jpg')}
                   alt="Gold pendant necklace on dark fabric"
                 />
               </div>
@@ -425,7 +427,7 @@ export function LandingPage({ generalOrderLink }: LandingPageProps) {
                   >
                     Message Asanora Jewels
                   </ButtonLink>
-                  <ButtonLink href="/products" variant="ghost-light">
+                  <ButtonLink href={productsPath} variant="ghost-light">
                     View featured pieces
                   </ButtonLink>
                 </div>
@@ -433,7 +435,7 @@ export function LandingPage({ generalOrderLink }: LandingPageProps) {
 
               <div className="cta__card">
                 <img
-                  src="/logo.jpg"
+                  src={assetPath('logo.jpg')}
                   alt="Asanora Jewels logo"
                   width="96"
                   height="96"

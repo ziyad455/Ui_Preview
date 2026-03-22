@@ -1,5 +1,6 @@
 import type { FaqItemProps } from '../components/FaqItem'
 import type { ProductCardProps } from '../components/ProductCard'
+import { assetPath } from '../lib/assets'
 
 export const heroHighlights = [
   {
@@ -26,7 +27,7 @@ export const allProducts: ProductCardProps[] = [
   {
     name: 'Zodiac Bracelet',
     reference: 'AJ-01',
-    image: '/products/zodiac-bracelet.jpg',
+    image: assetPath('products/zodiac-bracelet.jpg'),
     alt: 'Gold bracelet worn over a blue sleeve in a lifestyle shot',
     category: 'Personalized favorite',
     note: 'Ready to order',
@@ -36,7 +37,7 @@ export const allProducts: ProductCardProps[] = [
   {
     name: 'Heart Set',
     reference: 'AJ-02',
-    image: '/products/heart-set.jpg',
+    image: assetPath('products/heart-set.jpg'),
     alt: 'Gold heart earrings and matching necklace on a shell-like plate',
     category: 'Matching set',
     note: 'New arrival',
@@ -46,7 +47,7 @@ export const allProducts: ProductCardProps[] = [
   {
     name: 'Onyx Bracelet',
     reference: 'AJ-03',
-    image: '/products/onyx-bracelet.jpg',
+    image: assetPath('products/onyx-bracelet.jpg'),
     alt: 'Black enamel gold bracelet styled against a contrasting studio background',
     category: 'Studio contrast',
     note: 'Best for stacking',
@@ -56,7 +57,7 @@ export const allProducts: ProductCardProps[] = [
   {
     name: 'Butterfly Handpiece',
     reference: 'AJ-04',
-    image: '/products/butterfly-handpiece.jpg',
+    image: assetPath('products/butterfly-handpiece.jpg'),
     alt: 'Butterfly-shaped handpiece bracelet on a cream background',
     category: 'Occasion detail',
     note: 'Limited batch',
@@ -66,7 +67,7 @@ export const allProducts: ProductCardProps[] = [
   {
     name: 'Snake Pendant',
     reference: 'AJ-05',
-    image: '/products/snake-pendant.jpg',
+    image: assetPath('products/snake-pendant.jpg'),
     alt: 'Snake chain necklace with a round pendant on black draped fabric',
     category: 'Pendant necklace',
     note: 'Everyday piece',
@@ -76,7 +77,7 @@ export const allProducts: ProductCardProps[] = [
   {
     name: 'Mother of Pearl Chain',
     reference: 'AJ-06',
-    image: '/products/mother-of-pearl-chain.jpg',
+    image: assetPath('products/mother-of-pearl-chain.jpg'),
     alt: 'Fine gold chain with mother of pearl stations on a dark backdrop',
     category: 'Layering chain',
     note: 'Soft shine',
@@ -86,7 +87,7 @@ export const allProducts: ProductCardProps[] = [
   {
     name: 'Gold Mesh Bracelet',
     reference: 'AJ-07',
-    image: '/products/gold-mesh-bracelet.jpg',
+    image: assetPath('products/gold-mesh-bracelet.jpg'),
     alt: 'Wide gold bracelet laid on dark fabric',
     category: 'Statement bracelet',
     note: 'Bold finish',
@@ -96,7 +97,7 @@ export const allProducts: ProductCardProps[] = [
   {
     name: 'Knot Bracelet',
     reference: 'AJ-08',
-    image: '/products/knot-bracelet.jpg',
+    image: assetPath('products/knot-bracelet.jpg'),
     alt: 'Gold knot bracelet displayed on a jewelry box',
     category: 'Bracelet',
     note: 'Giftable favorite',
@@ -106,7 +107,7 @@ export const allProducts: ProductCardProps[] = [
   {
     name: 'Watch Bracelet',
     reference: 'AJ-09',
-    image: '/products/watch-bracelet.jpg',
+    image: assetPath('products/watch-bracelet.jpg'),
     alt: 'Gold watch bracelet on a dark studio background',
     category: 'Statement piece',
     note: 'Editorial pick',
@@ -116,7 +117,7 @@ export const allProducts: ProductCardProps[] = [
   {
     name: 'Charm Layer Necklace',
     reference: 'AJ-10',
-    image: '/products/editorial-plate.jpg',
+    image: assetPath('products/editorial-plate.jpg'),
     alt: 'Assorted gold necklaces and charms styled on a plate',
     category: 'Charm necklace',
     note: 'Signature edit',

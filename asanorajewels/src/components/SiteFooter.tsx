@@ -1,10 +1,15 @@
 import { Link } from 'react-router-dom'
+import { assetPath } from '../lib/assets'
 
 const footerLinks = [
   { label: 'Home', href: '/', kind: 'route' as const },
-  { label: 'Collection', href: '/#collection', kind: 'anchor' as const },
+  {
+    label: 'Collection',
+    href: `${import.meta.env.BASE_URL}#collection`,
+    kind: 'anchor' as const,
+  },
   { label: 'Products', href: '/products', kind: 'route' as const },
-  { label: 'FAQ', href: '/#faq', kind: 'anchor' as const },
+  { label: 'FAQ', href: `${import.meta.env.BASE_URL}#faq`, kind: 'anchor' as const },
 ]
 
 export function SiteFooter() {
@@ -13,7 +18,7 @@ export function SiteFooter() {
       <div className="site-footer__inner">
         <div className="site-footer__brand">
           <img
-            src="/logo.jpg"
+            src={assetPath('logo.jpg')}
             alt="Asanora Jewels logo"
             width="64"
             height="64"

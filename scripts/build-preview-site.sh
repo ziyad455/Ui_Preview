@@ -1,0 +1,116 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+ROOT_DIR="$(cd "$(dirname "$0")/.." && pwd)"
+APP_DIR="$ROOT_DIR/asanorajewels"
+PUBLISH_DIR="$ROOT_DIR/preview-site"
+
+rm -rf "$PUBLISH_DIR"
+mkdir -p "$PUBLISH_DIR"
+
+cp -R "$ROOT_DIR/perfume" "$PUBLISH_DIR/perfume"
+cp -R "$ROOT_DIR/gifts_shop" "$PUBLISH_DIR/gifts_shop"
+cp -R "$ROOT_DIR/Jewels" "$PUBLISH_DIR/Jewels"
+
+npm --prefix "$APP_DIR" ci
+npm --prefix "$APP_DIR" run build
+
+mkdir -p "$PUBLISH_DIR/asanorajewels"
+cp -R "$APP_DIR/dist"/. "$PUBLISH_DIR/asanorajewels/"
+
+cat <<'EOF' > "$PUBLISH_DIR/index.html"
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UI Preview Projects</title>
+    <style>
+      :root {
+        color-scheme: light;
+        font-family: "Manrope", system-ui, sans-serif;
+        background: #f7f2ea;
+        color: #2f2415;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100svh;
+        display: grid;
+        place-items: center;
+        background:
+          radial-gradient(circle at top left, rgba(245, 218, 168, 0.45), transparent 30%),
+          linear-gradient(180deg, #fffdf8 0%, #f7f2ea 100%);
+      }
+
+      main {
+        width: min(100% - 2rem, 780px);
+        padding: 2rem;
+      }
+
+      h1 {
+        margin: 0 0 0.5rem;
+        font-size: clamp(2.4rem, 5vw, 4rem);
+        line-height: 0.95;
+      }
+
+      p {
+        margin: 0 0 2rem;
+        color: #5c4e3d;
+        line-height: 1.7;
+      }
+
+      .grid {
+        display: grid;
+        gap: 1rem;
+      }
+
+      a {
+        display: block;
+        padding: 1.1rem 1.2rem;
+        border-radius: 1.2rem;
+        text-decoration: none;
+        color: inherit;
+        background: rgba(255, 255, 255, 0.72);
+        border: 1px solid rgba(156, 119, 52, 0.14);
+        box-shadow: 0 14px 30px rgba(78, 56, 18, 0.08);
+      }
+
+      strong {
+        display: block;
+        font-size: 1.1rem;
+        margin-bottom: 0.2rem;
+      }
+
+      span {
+        color: #746552;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>UI Preview Projects</h1>
+      <p>Select a project preview from the list below.</p>
+      <div class="grid">
+        <a href="/asanorajewels/">
+          <strong>Asanora Jewels</strong>
+          <span>React landing page and products catalog</span>
+        </a>
+        <a href="/perfume/">
+          <strong>Perfume</strong>
+          <span>Static HTML preview</span>
+        </a>
+        <a href="/gifts_shop/">
+          <strong>Gifts Shop</strong>
+          <span>Static HTML preview</span>
+        </a>
+      </div>
+    </main>
+  </body>
+</html>
+EOF
+
+cat <<'EOF' > "$PUBLISH_DIR/_redirects"
+/asanorajewels/* /asanorajewels/index.html 200
+EOF
