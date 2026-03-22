@@ -6,6 +6,16 @@ ROOT_DIR="$(cd "$(dirname "$0")/.." && pwd)"
 APP_DIR="$ROOT_DIR/asanorajewels"
 PUBLISH_DIR="$ROOT_DIR/preview-site"
 
+remove_invalid_netlify_filenames() {
+  local target_dir="$1"
+
+  find "$target_dir" -type f -print0 | while IFS= read -r -d '' file; do
+    if [[ "$file" == *"#"* || "$file" == *\?* ]]; then
+      rm -f "$file"
+    fi
+  done
+}
+
 rm -rf "$PUBLISH_DIR"
 mkdir -p "$PUBLISH_DIR"
 
@@ -114,3 +124,5 @@ EOF
 cat <<'EOF' > "$PUBLISH_DIR/_redirects"
 /asanorajewels/* /asanorajewels/index.html 200
 EOF
+
+remove_invalid_netlify_filenames "$PUBLISH_DIR"
