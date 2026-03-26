@@ -1,0 +1,379 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>LUXE GIFTING | Curating with Purpose</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link rel="icon" type="image/jpeg" href="logo.jpg">
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "inverse-surface": "#303030",
+              "error-container": "#ffdad6",
+              "surface-tint": "#775a19",
+              "on-tertiary-fixed-variant": "#454744",
+              "tertiary-fixed-dim": "#c6c7c2",
+              "primary-fixed": "#ffdea5",
+              "on-primary-container": "#4e3700",
+              "secondary": "#6b5c4c",
+              "surface-dim": "#dcd9d9",
+              "on-secondary-fixed-variant": "#524436",
+              "secondary-fixed": "#f4dfcb",
+              "on-primary-fixed-variant": "#5d4201",
+              "on-tertiary-container": "#3a3c39",
+              "outline-variant": "#d1c5b4",
+              "surface-container": "#f0eded",
+              "secondary-container": "#f4dfcb",
+              "on-surface": "#1b1c1c",
+              "tertiary-fixed": "#e3e3de",
+              "surface-container-lowest": "#ffffff",
+              "on-secondary-fixed": "#241a0e",
+              "background": "#fbf9f8",
+              "tertiary-container": "#a5a6a2",
+              "surface": "#fbf9f8",
+              "primary-container": "#c5a059",
+              "surface-container-high": "#eae8e7",
+              "on-secondary-container": "#716252",
+              "primary-fixed-dim": "#e9c176",
+              "surface-container-highest": "#e4e2e1",
+              "surface-bright": "#fbf9f8",
+              "primary": "#775a19",
+              "on-tertiary": "#ffffff",
+              "on-error": "#ffffff",
+              "secondary-fixed-dim": "#d7c3b0",
+              "outline": "#7f7667",
+              "on-surface-variant": "#4e4639",
+              "on-background": "#1b1c1c",
+              "inverse-primary": "#e9c176",
+              "inverse-on-surface": "#f3f0f0",
+              "on-tertiary-fixed": "#1a1c19",
+              "surface-variant": "#e4e2e1",
+              "on-error-container": "#93000a",
+              "on-primary": "#ffffff",
+              "surface-container-low": "#f6f3f2",
+              "on-primary-fixed": "#261900",
+              "tertiary": "#5d5f5b",
+              "error": "#ba1a1a",
+              "on-secondary": "#ffffff"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+            scale: {
+              '102': '1.02',
+            }
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        vertical-align: middle;
+      }
+      .gradient-gold {
+        background: linear-gradient(135deg, #775a19 0%, #c5a059 100%);
+      }
+      .shadow-soft {
+        box-shadow: 0px 10px 40px rgba(27, 28, 28, 0.06);
+      }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#fbf9f8]/80 backdrop-blur-md shadow-sm">
+<div class="flex justify-between items-center px-10 py-6 max-w-[1440px] mx-auto">
+<div class="flex items-center gap-3">
+    <img src="logo.jpg" alt="Forever Ammaar Logo" class="h-10 w-10 rounded-full object-cover">
+    <div class="font-serif text-2xl tracking-widest uppercase text-[#1b1c1c]" style="">Forever Ammaar</div>
+</div>
+<div class="hidden md:flex items-center space-gap-10 gap-10">
+<a class="text-[#775a19] border-b border-[#775a19] pb-1 font-serif italic text-lg tracking-tight transition-colors duration-300" href="#" style="">Shop</a>
+<a class="text-[#1b1c1c] opacity-80 font-serif italic text-lg tracking-tight hover:text-[#775a19] transition-colors duration-300" href="#" style="">products</a>
+<a class="text-[#1b1c1c] opacity-80 font-serif italic text-lg tracking-tight hover:text-[#775a19] transition-colors duration-300" href="#" style="">Our Story</a>
+<a class="text-[#1b1c1c] opacity-80 font-serif italic text-lg tracking-tight hover:text-[#775a19] transition-colors duration-300" href="#" style="">Corporate</a>
+</div>
+<div class="flex items-center gap-6">
+<button class="material-symbols-outlined text-on-surface opacity-80" style="">search</button>
+<button class="gradient-gold text-on-primary px-8 py-2.5 rounded-full font-label text-sm uppercase tracking-widest scale-102 transition-transform duration-200" style="">Give a Gift</button>
+</div>
+</div>
+</nav>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="relative px-10 py-20 max-w-[1440px] mx-auto overflow-hidden">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+<div class="md:col-span-5 z-10">
+<h1 class="font-headline text-5xl md:text-7xl text-on-surface leading-tight mb-8 tracking-tight" style="">
+                        More Than a Gift — <br>
+<span class="italic text-primary" style="">A Meaningful Experience</span>
+</h1>
+<p class="text-on-surface-variant text-lg leading-loose mb-10 max-w-md" style="">
+                        Every curated box tells a story of intention, quality, and care. Hand-selected treasures wrapped in sophistication, designed to leave an everlasting impression.
+                    </p>
+<div class="flex gap-6">
+<button class="gradient-gold text-on-primary px-10 py-4 rounded-full font-label tracking-widest uppercase text-sm shadow-soft hover:scale-105 transition-transform" style="">Explore Collections</button>
+</div>
+</div>
+<div class="md:col-span-7 relative">
+<div class="rounded-xl overflow-hidden aspect-[4/5] md:aspect-[16/10] shadow-soft">
+<img alt="Luxury gift box" class="w-full h-full object-cover" data-alt="overhead view of a luxury curated gift box with gold ribbon, artisanal chocolates, and neutral textured wrapping on a marble surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0Hq_JP-LBMxgvxQEz08H2NKsThdgj5cNNIJtfqXkx_DzrDbXHysblqWcLxycvjCUW1HinpQL-pDkBsvudW2bMx7iYeEL0kpx9ttTE5UgBEw9B8I0nXctByflYLiosvZdqVAlgAXFxKxKv10-YqQ-FqOrfhqg73-ltzwSg7gch3UQa9j1odh5B_sbomKxNMp4uVAQz976PpMEzbqvP3Q6bNr1a8qfTmOycc468uPdQc0bsO192IJrmgwII3WSmDXhoVmX4jfw1c28" style="">
+</div>
+<div class="absolute -bottom-8 -left-8 bg-secondary-container p-8 rounded-xl max-w-xs hidden md:block border-none">
+<p class="font-headline text-xl italic text-on-secondary-container" style="">"The art of gifting is the art of connection."</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Our Story / Social Impact Preview -->
+<section class="bg-surface-container-low py-32 px-10">
+<div class="max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-24 items-center">
+<div class="order-2 md:order-1">
+<div class="rounded-xl overflow-hidden aspect-square shadow-soft">
+<img alt="Children playing" class="w-full h-full object-cover" data-alt="soft focused image of happy children playing in a sunlit garden, warm earthy tones, evoking a sense of community and support" src="https://lh3.googleusercontent.com/aida-public/AB6AXuABTFZEyauHgaRhQUoemPw04Gtn62HTZs-v3rOYgVH7Y9vloJX6dK2qSzrLqUC4FhbmCd84c3vdGjIyVqqssw02XLLF0ADzVgtPWM0mXY_p5KjgHDoaln1_EhmeoHg-MvOOYKO4IpvAa3dBA5gA92umBxjJf_PAhcPsPd92dNkHaSWQ4BD7NArTt1_Ump3pYRIQsCNmxFOu7IhRglizgeWGph78EpAQySjlJpJxSzose1csJZ0aYNPSMin007U46wFg4MGwyGXkH78" style="">
+</div>
+</div>
+<div class="order-1 md:order-2">
+<span class="font-label uppercase tracking-[0.3em] text-primary text-xs mb-6 block" style="">Our Story</span>
+<h2 class="font-headline text-4xl text-on-surface mb-8 leading-tight" style="">Gifts That Give Back to the Heart of the World.</h2>
+<p class="text-on-surface-variant text-lg leading-loose mb-8" style="">
+                        Luxe Gifting was born from a simple belief: luxury should have a soul. We don't just curate high-end products; we curate opportunities for change. A significant portion of every purchase directly supports educational initiatives for children in underserved communities.
+                    </p>
+<p class="text-on-surface-variant text-lg leading-loose mb-10 italic" style="">
+                        When you choose Luxe, you aren't just sending a box; you're sending a future.
+                    </p>
+<a class="inline-flex items-center gap-2 font-label uppercase tracking-widest text-sm text-primary group" href="#" style="">
+                        Learn about our mission
+                        <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform" style="">arrow_right_alt</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Shop by Occasion - Asymmetric Grid -->
+<section class="py-32 px-10 max-w-[1440px] mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+<div class="max-w-xl">
+<h2 class="font-headline text-4xl text-on-surface mb-4" style="">Curated for Every Occasion</h2>
+<p class="text-on-surface-variant" style="">Finding the perfect expression for life's most pivotal moments.</p>
+</div>
+<button class="text-primary font-label uppercase tracking-widest text-xs border-b border-primary pb-1" style="">View All Categories</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6 h-[600px]">
+<div class="md:col-span-2 relative group overflow-hidden rounded-xl cursor-pointer">
+<img alt="Eid Gifts" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Close up of ornate gold lantern and dates on a white silk cloth, soft morning light, elegant and traditional" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjw_-v9mm0LwCYFbEzGA1qhMLwPcoZKAYVqLaOHhw5vJsLNGmzEX3NrMPWtbziOvfsb66yLrFDBe_GBdy6Ys0tJqFDfl8nTRMqCksEV8G-6lvtuC1q80acr9hY_qgVFmg-JF5x3KkkVP_XQl42yM4l8SdpNXn2Fx4ESiA8dT-GcQwH4iaTzVwRAu9DOmlJOyhB8N76uBm4ld-GTtVY5yPP6DFuC5Os_rYpIXGxlZ1RA6N57kFK9K8qvCAAIEaOPizRdkc8ZFEMqJc" style="">
+<div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors"></div>
+<div class="absolute bottom-10 left-10 text-white">
+<h3 class="font-headline text-3xl mb-2" style="">Eid Gifts</h3>
+<p class="font-label text-xs uppercase tracking-widest opacity-80" style="">Celebrate with Grace</p>
+</div>
+</div>
+<div class="relative group overflow-hidden rounded-xl cursor-pointer">
+<img alt="For Her" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="High-end beauty products and a silk scarf arranged on a vanity, soft pink and cream tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiqMsXDpnfn3ssDNOvosa4z7ue7LqFYSyYtJepAwwc0PVz6YqKMh3jPKWg7rG2HQU9RDCzZTLOOHUq-_7t7mCN7co6iygkdSGbGXXHCVwQZ39Yp9K69HfR0mNwwDPuajXdx64UHOPz7tjwSc3MhTeqwqD97lIahpxkROYJm3vmupbqbR3Lw6H5Kzdl6QJiskmFmLXJwIMPG5U3tcEWYa0GvOMUnUH8PpNRGSNcpCG6xoQdfi5n4JCFWxEdWngNL2jQaRpBHgE_dA0" style="">
+<div class="absolute inset-0 bg-black/10 group-hover:bg-black/30 transition-colors"></div>
+<div class="absolute bottom-8 left-8 text-white">
+<h3 class="font-headline text-2xl mb-1" style="">For Her</h3>
+<p class="font-label text-xs uppercase tracking-widest opacity-80" style="">Timeless Elegance</p>
+</div>
+</div>
+<div class="relative group overflow-hidden rounded-xl cursor-pointer">
+<img alt="Corporate" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Sophisticated desk accessories and a luxury pen on a leather mat, professional and minimal aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4ze_WzlzPDtikhKa0XHsuTPdG-3bebEcpX2qDXnWks7HFfyTnmhr6V9iNw1yIrSWvq94XfZMNWXdR1_NFYEL1WiSAHHLidoX2pL7gXM05oApkKl6kmWqe9JCXO5Gkb5ZnGLa73T9Rg8ZnoiMGscmqmJ-6W6__u7OE1fxrSkNi8b4bDOR7EHWQ8YyOpyV6QaZd21YCYtLKP7jubOMbXhhFqNzY6k4qG9h4VEvKHWfUoJ8bv4fKNeWfe49lZB-JnKGrO1TaXx2lqtI" style="">
+<div class="absolute inset-0 bg-black/10 group-hover:bg-black/30 transition-colors"></div>
+<div class="absolute bottom-8 left-8 text-white">
+<h3 class="font-headline text-2xl mb-1" style="">Corporate</h3>
+<p class="font-label text-xs uppercase tracking-widest opacity-80" style="">Professional Poise</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Gift Boxes -->
+<section class="py-32 bg-surface-container">
+<div class="px-10 max-w-[1440px] mx-auto">
+<div class="text-center mb-20">
+<span class="font-label uppercase tracking-[0.3em] text-primary text-xs mb-4 block" style="">Signature Collection</span>
+<h2 class="font-headline text-4xl text-on-surface" style="">The Curator's Choice</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<!-- Product 1 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-soft group">
+<div class="aspect-square overflow-hidden relative">
+<img alt="The Serenity Box" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="a minimalist luxury gift box containing a scented candle, linen spray, and artisan tea tins" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4L1ievOSm5x20Hr_hKDoEwiQJAtP3fr_CN2t8bDx3eAQDZ2Wfeh-yhA214NReqDgnwQyJq-BRUTY2toK-x6ZVIw9XuzkKbFjWvP-KZFyUGHM8mUc3bTtqKCJE6P8FxKd1Yo4QwHZ6fI99OIx3i9-FHtS9jZfWluQYdKCTHJwmjz2qTovulR4AG4x5_v0S-Xv3K4Ge3TQ8wcPltGkzUDTLiBTHFS9jVLaUQM8JYPor5bY2JrC-ZDhOROwgoq6_Zpfk5Dlhqkwf1es" style="">
+<div class="absolute top-4 right-4 bg-primary text-on-primary text-[10px] uppercase tracking-widest px-3 py-1 rounded-full" style="">Bestseller</div>
+</div>
+<div class="p-8">
+<h3 class="font-headline text-2xl text-on-surface mb-2" style="">The Serenity Box</h3>
+<p class="text-on-surface-variant text-sm mb-6 leading-relaxed" style="">A peaceful collection of hand-poured candles and organic botanical teas.</p>
+<div class="flex items-center justify-between mb-8">
+<span class="text-primary font-headline text-xl" style="">$145.00</span>
+<span class="text-xs text-on-surface-variant font-label uppercase tracking-widest" style="">In Stock</span>
+</div>
+<button class="w-full border border-outline-variant/30 py-4 rounded-full flex items-center justify-center gap-3 font-label text-sm uppercase tracking-widest hover:bg-on-surface hover:text-white transition-all" style="">
+<span class="material-symbols-outlined text-lg" style="">chat</span>
+                                Order via WhatsApp
+                            </button>
+</div>
+</div>
+<!-- Product 2 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-soft group mt-8 md:mt-16">
+<div class="aspect-square overflow-hidden relative">
+<img alt="The Artisan's Table" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="a curated gourmet gift set with small-batch honey, ceramic spreader, and marble serving board" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAn8-qoVZFrHW2mFMJh3SsG0jmgkP6SYL21eRFdWLALhsik7A2aLsrz1wv_z3ullkk9rXp64GdxCgI0LIWurhJ6VhZhEjP0Rolas6mIH7KI9PFMdmaAYKInGhfrdBiOC9ZSQxBaf8kFFRaIdZvmtINk0nteCzAUBgk9GjTEvICMA83KuG2p6P4VYnClkrvIFG-w4rs1WYw82kbBgCYfNU5M9Mbuscab3m8wY8b_DNTldA7Qpyce1PYTnYn_I3c1VEWSsRhYw1XOwE" style="">
+</div>
+<div class="p-8">
+<h3 class="font-headline text-2xl text-on-surface mb-2" style="">The Artisan's Table</h3>
+<p class="text-on-surface-variant text-sm mb-6 leading-relaxed" style="">Small-batch treats and handcrafted ceramics for the ultimate host.</p>
+<div class="flex items-center justify-between mb-8">
+<span class="text-primary font-headline text-xl" style="">$185.00</span>
+<span class="text-xs text-on-surface-variant font-label uppercase tracking-widest" style="">Limited Edition</span>
+</div>
+<button class="w-full border border-outline-variant/30 py-4 rounded-full flex items-center justify-center gap-3 font-label text-sm uppercase tracking-widest hover:bg-on-surface hover:text-white transition-all" style="">
+<span class="material-symbols-outlined text-lg" style="">chat</span>
+                                Order via WhatsApp
+                            </button>
+</div>
+</div>
+<!-- Product 3 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-soft group">
+<div class="aspect-square overflow-hidden relative">
+<img alt="Midnight Velvet" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="luxury evening gift set featuring premium dark chocolate, a leather notebook, and a designer fountain pen" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWo-13GIiHnd4F4AYvg8hwXgfOzw06KraH6NTBg94mDw-JdW0ybaMTnrfTFchXiv-x-fZLjEbtaZcs25EHF8fNM9y1KUUvUAYSJ9KNyPaizXtADMQPynyg-3QxD4ltRT3Zev0-HgrKXhwnd98oGGvJxEGNpSp3RrzKQ7CWGSHAXp5Ytd_JUC8wP_88H5HNXwZTYK9cM0_CTAsXSHKCNvjWkeGJoMCcYrk-9yyMT1BGfxAKL2BIroddd5A5J2UIxMtCZWe4G3FLDFY" style="">
+</div>
+<div class="p-8">
+<h3 class="font-headline text-2xl text-on-surface mb-2" style="">Midnight Velvet</h3>
+<p class="text-on-surface-variant text-sm mb-6 leading-relaxed" style="">Bold flavors and sophisticated accessories for quiet evening reflections.</p>
+<div class="flex items-center justify-between mb-8">
+<span class="text-primary font-headline text-xl" style="">$210.00</span>
+<span class="text-xs text-on-surface-variant font-label uppercase tracking-widest" style="">Exclusive</span>
+</div>
+<button class="w-full border border-outline-variant/30 py-4 rounded-full flex items-center justify-center gap-3 font-label text-sm uppercase tracking-widest hover:bg-on-surface hover:text-white transition-all" style="">
+<span class="material-symbols-outlined text-lg" style="">chat</span>
+                                Order via WhatsApp
+                            </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Choose Us - Values -->
+<section class="py-32 px-10 max-w-[1440px] mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="flex flex-col gap-6">
+<span class="material-symbols-outlined text-primary text-4xl" style="">inventory_2</span>
+<h4 class="font-headline text-xl" style="">Luxury Curated Products</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed" style="">We source only the finest artisanal goods from heritage makers across the globe.</p>
+</div>
+<div class="flex flex-col gap-6">
+<span class="material-symbols-outlined text-primary text-4xl" style="">featured_seasonal_and_gifts</span>
+<h4 class="font-headline text-xl" style="">Beautiful Packaging</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed" style="">The unveiling is just as important as the gift. Our packaging is a keepsake in itself.</p>
+</div>
+<div class="flex flex-col gap-6">
+<span class="material-symbols-outlined text-primary text-4xl" style="">volunteer_activism</span>
+<h4 class="font-headline text-xl" style="">Meaningful Impact</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed" style="">20% of our profits go directly toward providing education for children in need.</p>
+</div>
+<div class="flex flex-col gap-6">
+<span class="material-symbols-outlined text-primary text-4xl" style="">person_pin_circle</span>
+<h4 class="font-headline text-xl" style="">Personalized Service</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed" style="">From handwritten notes to bespoke gift design, we handle every detail with love.</p>
+</div>
+</div>
+</section>
+<!-- Impact Ribbon -->
+<section class="bg-secondary-container py-16">
+<div class="max-w-[1440px] mx-auto px-10 flex flex-col md:flex-row items-center justify-between gap-8">
+<h2 class="font-headline text-3xl md:text-5xl text-on-secondary-container leading-tight text-center md:text-left" style="">
+                    Your gift changes a life. <br>
+<span class="italic opacity-80" style="">20% of every profit supports children.</span>
+</h2>
+<div class="flex flex-col items-center">
+<span class="font-headline text-6xl text-primary mb-2" style="">$42k+</span>
+<span class="font-label text-xs uppercase tracking-widest text-on-secondary-container opacity-70" style="">Donated this year</span>
+</div>
+</div>
+</section>
+<!-- Corporate Gifting -->
+<section class="py-32 px-10 max-w-[1440px] mx-auto">
+<div class="bg-surface-container-low rounded-xl overflow-hidden grid grid-cols-1 md:grid-cols-2 shadow-soft">
+<div class="p-16 flex flex-col justify-center">
+<span class="font-label uppercase tracking-[0.3em] text-primary text-xs mb-6 block" style="">For Business</span>
+<h2 class="font-headline text-4xl text-on-surface mb-8" style="">Corporate Gifting with Soul</h2>
+<p class="text-on-surface-variant text-lg leading-loose mb-10" style="">
+                        Elevate your brand and foster genuine connections with our high-end corporate gifting service. Whether for client appreciation, employee recognition, or event favors, we tailor every box to reflect your company's values and prestige.
+                    </p>
+<div class="flex flex-col gap-4">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" style="">check_circle</span>
+<span class="text-sm font-medium" style="">Custom Branding Options</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" style="">check_circle</span>
+<span class="text-sm font-medium" style="">Bulk Shipping Worldwide</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" style="">check_circle</span>
+<span class="text-sm font-medium" style="">Tax-Deductible Impact Reporting</span>
+</div>
+</div>
+<button class="mt-12 w-fit border-b border-on-surface pb-1 font-label uppercase tracking-widest text-xs hover:text-primary transition-colors" style="">Request a Proposal</button>
+</div>
+<div class="relative">
+<img alt="Corporate Gifting" class="w-full h-full object-cover" data-alt="a bright modern office meeting space with several luxury gift boxes neatly stacked on a wooden conference table" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0kitbCpuOoiOpjv2rgGeT_S2g-pnnrXGaF2W9eJfYvFYEzs9AeUfISNUMC_2ULKd1Us9wUirvb_LQhRQfSPIwVWO1aXCK9hPxWrr8MOcafj6fsOSbAw6bqAHRcktWFzt-5i9uOsLwQrudVUX1zcjcrsqcSe6LPCnhVJp093iflqgCiItbMqN_853ShQ-LOD4N7bZ4EbZ8XMntyqT0Z5PaunBUGaMmT1J0Lld4PVfOLEDYbrFEF3Pf-G3pSvoMtBVTK0LWE4lnFXQ" style="">
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="py-32 bg-surface">
+<div class="max-w-4xl mx-auto px-10 text-center">
+<h2 class="font-headline text-5xl md:text-6xl text-on-surface mb-10 leading-tight" style="">Ready to give a gift that <br> <span class="italic text-primary" style="">actually makes a difference?</span></h2>
+<div class="flex flex-col md:flex-row gap-6 justify-center items-center">
+<button class="gradient-gold text-on-primary px-12 py-5 rounded-full font-label tracking-widest uppercase text-sm shadow-soft hover:scale-105 transition-transform" style="">Browse Collections</button>
+<button class="px-12 py-5 rounded-full border border-outline-variant/40 font-label tracking-widest uppercase text-sm hover:bg-surface-container transition-colors" style="">Contact a Consultant</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#f6f3f2] w-full py-16 px-10 border-t-0">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-[1440px] mx-auto font-sans text-sm tracking-wide leading-loose">
+<div class="flex flex-col gap-8">
+<div class="font-serif text-xl text-[#1b1c1c]" style="">LUXE GIFTING</div>
+<p class="text-[#1b1c1c] opacity-70 max-w-xs" style="">Curating moments of beauty while fostering change for the world's most vulnerable children.</p>
+<div class="flex gap-4">
+<a class="text-[#775a19] opacity-70 hover:opacity-100 transition-opacity" href="#" style="">Instagram</a>
+<a class="text-[#775a19] opacity-70 hover:opacity-100 transition-opacity" href="#" style="">Pinterest</a>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-8">
+<div class="flex flex-col gap-4">
+<h5 class="font-label uppercase tracking-widest text-xs text-[#1b1c1c]" style="">Shop</h5>
+<a class="text-[#1b1c1c] opacity-70 hover:opacity-100 transition-opacity" href="#" style="">Best Sellers</a>
+<a class="text-[#1b1c1c] opacity-70 hover:opacity-100 transition-opacity" href="#" style="">Occasions</a>
+<a class="text-[#1b1c1c] opacity-70 hover:opacity-100 transition-opacity" href="#" style="">Custom Boxes</a>
+</div>
+<div class="flex flex-col gap-4">
+<h5 class="font-label uppercase tracking-widest text-xs text-[#1b1c1c]" style="">Support</h5>
+<a class="text-[#1b1c1c] opacity-70 hover:opacity-100 transition-opacity" href="#" style="">Contact Us</a>
+<a class="text-[#1b1c1c] opacity-70 hover:opacity-100 transition-opacity" href="#" style="">Shipping &amp; Returns</a>
+<a class="text-[#1b1c1c] opacity-70 hover:opacity-100 transition-opacity underline decoration-[#775a19]" href="#" style="">Privacy Policy</a>
+</div>
+</div>
+<div class="flex flex-col gap-6">
+<h5 class="font-label uppercase tracking-widest text-xs text-[#1b1c1c]" style="">Newsletter Signup</h5>
+<p class="text-[#1b1c1c] opacity-70" style="">Join our inner circle for exclusive previews and stories of impact.</p>
+<form class="flex gap-2">
+<input class="bg-transparent border-0 border-b border-outline-variant/30 focus:ring-0 focus:border-primary py-2 w-full text-sm" placeholder="Email Address" type="email">
+<button class="material-symbols-outlined text-primary" type="submit" style="">arrow_forward</button>
+</form>
+</div>
+</div>
+<div class="mt-20 pt-10 border-t border-outline-variant/10 text-center max-w-[1440px] mx-auto">
+<p class="text-[#1b1c1c] opacity-50 text-xs" style="">© 2024 Luxe Gifting. Curating with Purpose.</p>
+</div>
+</footer>
+</body></html>
