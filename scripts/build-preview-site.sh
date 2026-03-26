@@ -3,7 +3,6 @@
 set -euo pipefail
 
 ROOT_DIR="$(cd "$(dirname "$0")/.." && pwd)"
-APP_DIR="$ROOT_DIR/asanorajewels"
 PUBLISH_DIR="$ROOT_DIR/preview-site"
 
 remove_invalid_netlify_filenames() {
@@ -22,12 +21,8 @@ mkdir -p "$PUBLISH_DIR"
 cp -R "$ROOT_DIR/perfume" "$PUBLISH_DIR/perfume"
 cp -R "$ROOT_DIR/gifts_shop" "$PUBLISH_DIR/gifts_shop"
 cp -R "$ROOT_DIR/Jewels" "$PUBLISH_DIR/Jewels"
-
-npm --prefix "$APP_DIR" ci
-npm --prefix "$APP_DIR" run build
-
-mkdir -p "$PUBLISH_DIR/asanorajewels"
-cp -R "$APP_DIR/dist"/. "$PUBLISH_DIR/asanorajewels/"
+cp -R "$ROOT_DIR/asanorajewels" "$PUBLISH_DIR/asanorajewels"
+cp -R "$ROOT_DIR/forever_ammaar" "$PUBLISH_DIR/forever_ammaar"
 
 cat <<'EOF' > "$PUBLISH_DIR/index.html"
 <!doctype html>
@@ -105,7 +100,11 @@ cat <<'EOF' > "$PUBLISH_DIR/index.html"
       <div class="grid">
         <a href="/asanorajewels/">
           <strong>Asanora Jewels</strong>
-          <span>React landing page and products catalog</span>
+          <span>Static jewelry preview</span>
+        </a>
+        <a href="/forever_ammaar/">
+          <strong>Forever Ammaar</strong>
+          <span>Static luxury gifting preview</span>
         </a>
         <a href="/perfume/">
           <strong>Perfume</strong>
@@ -122,6 +121,8 @@ cat <<'EOF' > "$PUBLISH_DIR/index.html"
 EOF
 
 cat <<'EOF' > "$PUBLISH_DIR/_redirects"
+/forever_ammaar /forever_ammaar/index.html 200
+/asanorajewels/products /asanorajewels/products/index.html 200
 /asanorajewels/* /asanorajewels/index.html 200
 EOF
 
