@@ -24,6 +24,7 @@ cp -R "$ROOT_DIR/Jewels" "$PUBLISH_DIR/Jewels"
 cp -R "$ROOT_DIR/asanorajewels" "$PUBLISH_DIR/asanorajewels"
 cp -R "$ROOT_DIR/forever_ammaar" "$PUBLISH_DIR/forever_ammaar"
 cp -R "$ROOT_DIR/fashion_home" "$PUBLISH_DIR/fashion_home"
+cp -R "$ROOT_DIR/zm_cravings" "$PUBLISH_DIR/zm_cravings"
 
 cat <<'EOF' > "$PUBLISH_DIR/index.html"
 <!doctype html>
