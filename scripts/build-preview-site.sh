@@ -120,6 +120,10 @@ cat <<'EOF' > "$PUBLISH_DIR/index.html"
           <strong>Fashion Home</strong>
           <span>Static fashion preview</span>
         </a>
+        <a href="/zm_cravings/">
+          <strong>ZM Cravings</strong>
+          <span>Static HTML preview</span>
+        </a>
       </div>
     </main>
   </body>
@@ -129,6 +133,7 @@ EOF
 cat <<'EOF' > "$PUBLISH_DIR/_redirects"
 /forever_ammaar /forever_ammaar/index.html 200
 /fashion_home /fashion_home/index.html 200
+/zm_cravings /zm_cravings/index.html 200
 /asanorajewels/products /asanorajewels/products/index.html 200
 /asanorajewels/* /asanorajewels/index.html 200
 EOF
