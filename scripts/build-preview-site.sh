@@ -124,6 +124,11 @@ cat <<'EOF' > "$PUBLISH_DIR/index.html"
           <strong>ZM Cravings</strong>
           <span>Static HTML preview</span>
         </a>
+
+        <a href="/L'atelier/">
+          <strong>L'atelier</strong>
+          <span>Static jewelry preview</span>
+        </a>
       </div>
     </main>
   </body>
@@ -136,6 +141,7 @@ cat <<'EOF' > "$PUBLISH_DIR/_redirects"
 /zm_cravings /zm_cravings/index.html 200
 /asanorajewels/products /asanorajewels/products/index.html 200
 /asanorajewels/* /asanorajewels/index.html 200
+/L'atelier/* /L'atelier/index.html 200
 EOF
 
 remove_invalid_netlify_filenames "$PUBLISH_DIR"
