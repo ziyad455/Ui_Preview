@@ -25,6 +25,7 @@ cp -R "$ROOT_DIR/asanorajewels" "$PUBLISH_DIR/asanorajewels"
 cp -R "$ROOT_DIR/forever_ammaar" "$PUBLISH_DIR/forever_ammaar"
 cp -R "$ROOT_DIR/fashion_home" "$PUBLISH_DIR/fashion_home"
 cp -R "$ROOT_DIR/zm_cravings" "$PUBLISH_DIR/zm_cravings"
+cp -R "$ROOT_DIR/L'atelier" "$PUBLISH_DIR/L'atelier"
 
 cat <<'EOF' > "$PUBLISH_DIR/index.html"
 <!doctype html>
@@ -125,9 +126,14 @@ cat <<'EOF' > "$PUBLISH_DIR/index.html"
           <span>Static HTML preview</span>
         </a>
 
+        <a href="/Jewels/">
+          <strong>Jewels</strong>
+          <span>Static jewelry preview</span>
+        </a>
+
         <a href="/L'atelier/">
           <strong>L'atelier</strong>
-          <span>Static jewelry preview</span>
+          <span>Static beauty lounge preview</span>
         </a>
       </div>
     </main>
