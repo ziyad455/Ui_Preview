@@ -4,11 +4,401 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/jpeg" href="../logo.jpg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Asanora Jewels | Jewelry Collection</title>
-    <script type="module" crossorigin src="../assets/index-UyQYIO_C.js"></script>
-    <link rel="stylesheet" crossorigin href="../assets/index-Sl159vyB.css" />
+    <title>Products | Asanora Jewels</title>
+    <meta
+      name="description"
+      content="Browse the full Asanora Jewels catalog with curated product stories, premium imagery, and concierge-ready inquiry paths."
+    />
+    <link rel="stylesheet" href="../assets/site.css" />
+    <script src="../assets/site.js" defer></script>
   </head>
-  <body>
-    <div id="root"></div>
+  <body data-page="products" data-root-path="../">
+    <div class="site-shell">
+      <div data-site-header></div>
+
+      <main id="main-content">
+        <section class="section hero hero--page">
+          <div class="section__inner hero__layout">
+            <div class="hero__copy" data-reveal>
+              <p class="eyebrow">Full catalog</p>
+              <h1 class="hero__title">Browse the full jewelry edit in one polished space.</h1>
+              <p class="hero__lead">
+                Search by mood, category, or piece name, then move directly into a private consultation when
+                you are ready for sizing help, gifting notes, or a tailored recommendation.
+              </p>
+              <div class="hero__actions">
+                <a class="button button--primary" href="../concierge/">Ask the concierge</a>
+                <a class="button button--secondary" href="../collections/">View collections</a>
+              </div>
+            </div>
+
+            <aside class="page-hero-card" data-reveal>
+              <p class="eyebrow">Catalog notes</p>
+              <strong>Each piece is styled as an editorial object, not a plain listing.</strong>
+              <ul class="page-hero-card__list">
+                <li>Reference-ready cards for quicker inquiry conversations.</li>
+                <li>Search and category filters for fast browsing across edits.</li>
+                <li>Clear links into concierge support when guidance is needed.</li>
+              </ul>
+            </aside>
+          </div>
+        </section>
+
+        <section class="section section--tight">
+          <div class="section__inner catalog-shell" data-product-catalog>
+            <div class="filter-bar" data-reveal>
+              <label class="filter-bar__search">
+                <span class="filter-bar__label">Search the collection</span>
+                <input
+                  type="search"
+                  placeholder="Search by name, reference, category, or mood"
+                  data-product-search
+                />
+              </label>
+
+              <div>
+                <p class="filter-bar__label">Filter by category</p>
+                <div class="filter-chips">
+                  <button class="filter-chip is-active" type="button" data-filter="all">All</button>
+                  <button class="filter-chip" type="button" data-filter="bracelets">Bracelets</button>
+                  <button class="filter-chip" type="button" data-filter="necklaces">Necklaces</button>
+                  <button class="filter-chip" type="button" data-filter="statement">Statement</button>
+                  <button class="filter-chip" type="button" data-filter="sets">Sets</button>
+                  <button class="filter-chip" type="button" data-filter="watches">Watches</button>
+                </div>
+              </div>
+
+              <p class="results-meta" data-results-count>10 pieces available</p>
+            </div>
+
+            <div class="catalog-grid">
+              <article
+                class="catalog-card"
+                id="aj-101"
+                data-reveal
+                data-product-card
+                data-category="bracelets"
+                data-search="aj-101 knot sculpted bracelet gold chain statement"
+              >
+                <div class="catalog-card__media">
+                  <img src="./knot-bracelet.jpg" alt="Knot Sculpted Bracelet on a satin box." />
+                </div>
+                <div class="catalog-card__body">
+                  <p class="catalog-card__reference">AJ-101 | Bracelets</p>
+                  <h2>Knot Sculpted Bracelet</h2>
+                  <p>
+                    Fluid interlocking links create a strong wrist statement while the warm finish keeps it
+                    refined enough for daily wear.
+                  </p>
+                  <div class="pill-row">
+                    <span class="pill">Adjustable fit</span>
+                    <span class="pill">Signature chainwork</span>
+                  </div>
+                  <div class="catalog-card__footer">
+                    <a class="card-link" href="mailto:concierge@asanorajewels.com?subject=Inquiry%20for%20AJ-101%20Knot%20Sculpted%20Bracelet">Request pricing <span>&rarr;</span></a>
+                    <a class="button button--ghost" href="../concierge/">Style this piece</a>
+                  </div>
+                </div>
+              </article>
+
+              <article
+                class="catalog-card"
+                id="aj-102"
+                data-reveal
+                data-product-card
+                data-category="necklaces"
+                data-search="aj-102 coin medallion layering set editorial plate necklaces set"
+              >
+                <div class="catalog-card__media">
+                  <img src="./editorial-plate.jpg" alt="Layered gold necklaces styled on a white plate." />
+                </div>
+                <div class="catalog-card__body">
+                  <p class="catalog-card__reference">AJ-102 | Necklaces</p>
+                  <h2>Coin Medallion Layering Set</h2>
+                  <p>
+                    An editorial stack of medallions and polished chains built for layered dressing and premium
+                    gifting moments.
+                  </p>
+                  <div class="pill-row">
+                    <span class="pill">Layered look</span>
+                    <span class="pill">Occasion favorite</span>
+                  </div>
+                  <div class="catalog-card__footer">
+                    <a class="card-link" href="mailto:concierge@asanorajewels.com?subject=Inquiry%20for%20AJ-102%20Coin%20Medallion%20Layering%20Set">Request pricing <span>&rarr;</span></a>
+                    <a class="button button--ghost" href="../collections/#occasion-sets">See the collection</a>
+                  </div>
+                </div>
+              </article>
+
+              <article
+                class="catalog-card"
+                id="aj-103"
+                data-reveal
+                data-product-card
+                data-category="bracelets"
+                data-search="aj-103 woven mesh bracelet gold minimal bracelet"
+              >
+                <div class="catalog-card__media">
+                  <img src="./gold-mesh-bracelet.jpg" alt="A woven gold mesh bracelet on black background." />
+                </div>
+                <div class="catalog-card__body">
+                  <p class="catalog-card__reference">AJ-103 | Bracelets</p>
+                  <h2>Woven Mesh Bracelet</h2>
+                  <p>
+                    Clean, elongated lines with a subtle vintage attitude for clients who prefer discreet luxury
+                    over heavy sparkle.
+                  </p>
+                  <div class="pill-row">
+                    <span class="pill">Minimal icon</span>
+                    <span class="pill">Daily polish</span>
+                  </div>
+                  <div class="catalog-card__footer">
+                    <a class="card-link" href="mailto:concierge@asanorajewels.com?subject=Inquiry%20for%20AJ-103%20Woven%20Mesh%20Bracelet">Request pricing <span>&rarr;</span></a>
+                    <a class="button button--ghost" href="../concierge/">Ask about fit</a>
+                  </div>
+                </div>
+              </article>
+
+              <article
+                class="catalog-card"
+                id="aj-104"
+                data-reveal
+                data-product-card
+                data-category="sets"
+                data-search="aj-104 heart duet set matching gift romantic"
+              >
+                <div class="catalog-card__media">
+                  <img src="./heart-set.jpg" alt="A matching heart jewelry set in gold." />
+                </div>
+                <div class="catalog-card__body">
+                  <p class="catalog-card__reference">AJ-104 | Sets</p>
+                  <h2>Heart Duet Set</h2>
+                  <p>
+                    A romantic pairing styled for anniversaries, milestone gifts, and clients who love cohesive
+                    jewelry stories.
+                  </p>
+                  <div class="pill-row">
+                    <span class="pill">Gift-ready</span>
+                    <span class="pill">Matching pair</span>
+                  </div>
+                  <div class="catalog-card__footer">
+                    <a class="card-link" href="mailto:concierge@asanorajewels.com?subject=Inquiry%20for%20AJ-104%20Heart%20Duet%20Set">Request pricing <span>&rarr;</span></a>
+                    <a class="button button--ghost" href="../collections/#occasion-sets">Gift styling</a>
+                  </div>
+                </div>
+              </article>
+
+              <article
+                class="catalog-card"
+                id="aj-105"
+                data-reveal
+                data-product-card
+                data-category="necklaces"
+                data-search="aj-105 mother of pearl chain necklace ivory pendant"
+              >
+                <div class="catalog-card__media">
+                  <img src="./mother-of-pearl-chain.jpg" alt="A mother-of-pearl pendant necklace." />
+                </div>
+                <div class="catalog-card__body">
+                  <p class="catalog-card__reference">AJ-105 | Necklaces</p>
+                  <h2>Ivory Motif Pendant</h2>
+                  <p>
+                    A softly luminous necklace that balances delicate femininity with enough structure to anchor
+                    a complete look.
+                  </p>
+                  <div class="pill-row">
+                    <span class="pill">Soft icon</span>
+                    <span class="pill">Bridal friendly</span>
+                  </div>
+                  <div class="catalog-card__footer">
+                    <a class="card-link" href="mailto:concierge@asanorajewels.com?subject=Inquiry%20for%20AJ-105%20Ivory%20Motif%20Pendant">Request pricing <span>&rarr;</span></a>
+                    <a class="button button--ghost" href="../collections/#soft-icons">Soft Icons edit</a>
+                  </div>
+                </div>
+              </article>
+
+              <article
+                class="catalog-card"
+                id="aj-106"
+                data-reveal
+                data-product-card
+                data-category="statement"
+                data-search="aj-106 butterfly handpiece statement bridal pearl"
+              >
+                <div class="catalog-card__media">
+                  <img src="./butterfly-handpiece.jpg" alt="Butterfly Handpiece in gold and ivory." />
+                </div>
+                <div class="catalog-card__body">
+                  <p class="catalog-card__reference">AJ-106 | Statement</p>
+                  <h2>Butterfly Handpiece</h2>
+                  <p>
+                    A graceful hand chain with butterfly accents, designed for bridal moments and fashion-forward
+                    festive looks.
+                  </p>
+                  <div class="pill-row">
+                    <span class="pill">Occasion piece</span>
+                    <span class="pill">Pearl enamel</span>
+                  </div>
+                  <div class="catalog-card__footer">
+                    <a class="card-link" href="mailto:concierge@asanorajewels.com?subject=Inquiry%20for%20AJ-106%20Butterfly%20Handpiece">Request pricing <span>&rarr;</span></a>
+                    <a class="button button--ghost" href="../concierge/">Plan the full look</a>
+                  </div>
+                </div>
+              </article>
+
+              <article
+                class="catalog-card"
+                id="aj-107"
+                data-reveal
+                data-product-card
+                data-category="bracelets"
+                data-search="aj-107 onyx bracelet black enamel evening"
+              >
+                <div class="catalog-card__media">
+                  <img src="./onyx-bracelet.jpg" alt="A black and gold onyx bracelet." />
+                </div>
+                <div class="catalog-card__body">
+                  <p class="catalog-card__reference">AJ-107 | Bracelets</p>
+                  <h2>Onyx Accent Bracelet</h2>
+                  <p>
+                    Deep black detailing sharpens the gold finish, giving this bracelet a polished after-dark personality.
+                  </p>
+                  <div class="pill-row">
+                    <span class="pill">Evening icon</span>
+                    <span class="pill">High contrast</span>
+                  </div>
+                  <div class="catalog-card__footer">
+                    <a class="card-link" href="mailto:concierge@asanorajewels.com?subject=Inquiry%20for%20AJ-107%20Onyx%20Accent%20Bracelet">Request pricing <span>&rarr;</span></a>
+                    <a class="button button--ghost" href="../collections/#midnight-icons">See Midnight Icons</a>
+                  </div>
+                </div>
+              </article>
+
+              <article
+                class="catalog-card"
+                id="aj-108"
+                data-reveal
+                data-product-card
+                data-category="necklaces"
+                data-search="aj-108 snake pendant necklace black gold icon"
+              >
+                <div class="catalog-card__media">
+                  <img src="./snake-pendant.jpg" alt="Snake pendant necklace on black fabric." />
+                </div>
+                <div class="catalog-card__body">
+                  <p class="catalog-card__reference">AJ-108 | Necklaces</p>
+                  <h2>Serpentine Medal Necklace</h2>
+                  <p>
+                    A sleek chain and medallion pairing that brings mystery, contrast, and a confident luxury finish.
+                  </p>
+                  <div class="pill-row">
+                    <span class="pill">Textured chain</span>
+                    <span class="pill">Evening styling</span>
+                  </div>
+                  <div class="catalog-card__footer">
+                    <a class="card-link" href="mailto:concierge@asanorajewels.com?subject=Inquiry%20for%20AJ-108%20Serpentine%20Medal%20Necklace">Request pricing <span>&rarr;</span></a>
+                    <a class="button button--ghost" href="../concierge/">Pair this necklace</a>
+                  </div>
+                </div>
+              </article>
+
+              <article
+                class="catalog-card"
+                id="aj-109"
+                data-reveal
+                data-product-card
+                data-category="watches"
+                data-search="aj-109 nocturne watch bracelet black dial vintage"
+              >
+                <div class="catalog-card__media">
+                  <img src="./watch-bracelet.jpg" alt="A gold watch bracelet with black dial." />
+                </div>
+                <div class="catalog-card__body">
+                  <p class="catalog-card__reference">AJ-109 | Watches</p>
+                  <h2>Nocturne Watch Bracelet</h2>
+                  <p>
+                    A slim vintage-inspired timepiece with mesh texture and dramatic contrast, ideal for dressier wardrobes.
+                  </p>
+                  <div class="pill-row">
+                    <span class="pill">Vintage mood</span>
+                    <span class="pill">Event wear</span>
+                  </div>
+                  <div class="catalog-card__footer">
+                    <a class="card-link" href="mailto:concierge@asanorajewels.com?subject=Inquiry%20for%20AJ-109%20Nocturne%20Watch%20Bracelet">Request pricing <span>&rarr;</span></a>
+                    <a class="button button--ghost" href="../collections/#midnight-icons">View the edit</a>
+                  </div>
+                </div>
+              </article>
+
+              <article
+                class="catalog-card"
+                id="aj-110"
+                data-reveal
+                data-product-card
+                data-category="bracelets"
+                data-search="aj-110 zodiac charm bracelet gold gifting"
+              >
+                <div class="catalog-card__media">
+                  <img src="./zodiac-bracelet.jpg" alt="A zodiac charm bracelet in gold." />
+                </div>
+                <div class="catalog-card__body">
+                  <p class="catalog-card__reference">AJ-110 | Bracelets</p>
+                  <h2>Zodiac Charm Bracelet</h2>
+                  <p>
+                    A personal, giftable bracelet that turns symbolic detail into a polished everyday keepsake.
+                  </p>
+                  <div class="pill-row">
+                    <span class="pill">Personal gift</span>
+                    <span class="pill">Layering piece</span>
+                  </div>
+                  <div class="catalog-card__footer">
+                    <a class="card-link" href="mailto:concierge@asanorajewels.com?subject=Inquiry%20for%20AJ-110%20Zodiac%20Charm%20Bracelet">Request pricing <span>&rarr;</span></a>
+                    <a class="button button--ghost" href="../concierge/">Personalize the gift</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="empty-state" hidden data-empty-state>
+              <h2>No matching pieces</h2>
+              <p>
+                Try a different keyword or move into a private consultation for a handpicked recommendation.
+              </p>
+              <a class="button button--primary" href="../concierge/">Ask the concierge</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section__inner">
+            <div class="cta-panel" data-reveal>
+              <div class="cta-panel__copy">
+                <p class="eyebrow">Need help choosing?</p>
+                <h2>Let the catalog start the conversation, not end it.</h2>
+                <p>
+                  The concierge can help with matching sets, gift occasions, wardrobe pairing, and the fastest
+                  route to the right finish or silhouette.
+                </p>
+                <div class="hero__actions">
+                  <a class="button button--light" href="../concierge/">Book concierge support</a>
+                  <a class="button button--ghost-light" href="../faq/">Read shipping and care answers</a>
+                </div>
+              </div>
+
+              <aside class="cta-panel__card">
+                <img src="../logo.jpg" alt="Asanora Jewels logo." width="108" height="108" />
+                <strong>Concierge-led browsing</strong>
+                <p>
+                  Browse independently when you want to, then switch to tailored guidance when the moment calls
+                  for nuance.
+                </p>
+              </aside>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <div data-site-footer></div>
+    </div>
   </body>
 </html>
